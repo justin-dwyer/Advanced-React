@@ -7,7 +7,7 @@ const Header = () => (
         <Nav />
       </div>
       <div className="sub-bar">
-        <p>Search</p>
+        <p className="weird">Search</p>
       </div>
       <div>Cart</div>
     </div>
