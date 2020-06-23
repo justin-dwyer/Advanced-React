@@ -1,13 +1,28 @@
 import Nav from './Nav';
+import styled from 'styled-components';
+
+const Logo = styled.div`
+  .logo {
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background: ${props => props.theme.red};
+    padding: 5px;
+    background-clip: 20px;
+    font-weight: 600;
+  }
+`
 
 const Header = () => (
     <div>
-      <div className="bar">
-        <a href="">Sick Fits</a>
+      <Logo className="bar">
+        <a className="logo" href="">Sick Fits!</a>
         <Nav />
-      </div>
+      </Logo>
       <div className="sub-bar">
-        <p className="weird">Search</p>
+        <p>Search</p>
       </div>
       <div>Cart</div>
     </div>
